@@ -67,14 +67,15 @@ public class Cryptanalysis {
 				frequecyList.set(i, frequecyList.get(i) + 1);
 			}
 			
-			//rank
-			
 		}
+		//make copy and rank then find these values within frequencyList?
 		
 		
-		
-		
+	
 	}
+	
+	
+	
 	
 	public static double CheckAPI(String attempt) {
 		//break down to words in an array, pass each into api and collect double of percent correct
