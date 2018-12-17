@@ -2,7 +2,7 @@ package cypher;
 
 public class Cypher {
 //	static char[] alpha = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
-	static String alphabet = "abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVQXYZ,.;:?'!1234567890$&"; // ABCDEFGHIJKLMNOPQRSTUVQXYZ
+	static String alphabet = "abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVQXYZ`~1!2@3#4$5%6^7&8*9(0)-_=+|]}[{';:/?.>,<"; // ABCDEFGHIJKLMNOPQRSTUVQXYZ
 
 	public static String encrypt(String p, int k) {
 		
@@ -21,7 +21,7 @@ public class Cypher {
 			c += newChar;
 		}
 		
-		System.out.println(c);
+//		System.out.println("Encryption: " + c);
 		return c;
 	}
 	
@@ -54,13 +54,9 @@ public class Cypher {
 		}
 		
 		
-		System.out.println(p);
+//		System.out.println("Decryption: " + p);
 		return p;
 		
 	}
-	
-	public static void main(String[] args) {
-		Cypher.encrypt("Hey there 123 whawha : hash MAAAAA", 1);
-		Cypher.decrypt("IfzAuifsfA234AxibxibA?AibtiANBBBBB", 1);
-	}
+
 }
