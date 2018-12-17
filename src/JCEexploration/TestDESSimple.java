@@ -25,8 +25,9 @@ public class TestDESSimple {
           String msg = "Welcome everybody. This is Ali :)";        
           
           System.out.println("The plain text: "+msg);            
-          byte[] encText = des1.encrypt(msg);            
-          System.out.println("The DES encrypted message 64: "+ (new BASE64Encoder().encode(encText)));            
+          byte[] encText = des1.encrypt(msg);       
+          System.out.println(new String(encText));
+          System.out.println("The DES encrypted message 64: "+ (new BASE64Encoder().encode(encText)));   //to 64 bit for campatability sending across netwrok and across diff sustems...          
           String decText = des1.decrypt(encText);
           System.out.println("The DES decrypted message: "+decText);
           
